@@ -6,42 +6,6 @@
   border-radius: 4px;
 }
 
-.head {
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  border: 1px dashed #dbdbdb;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
-}
-
-input {
-  display: none;
-}
-
-button {
-  display: inline-flex;
-  font-size: 1rem;
-  border-radius: 4px;
-  line-height: 1.5;
-  border: 1px solid transparent;
-  background-color: #00c4a7;
-  cursor: pointer;
-  justify-content: center;
-  padding-bottom: calc(.5em - 1px);
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: calc(.5em - 1px);
-  text-align: center;
-  white-space: nowrap;
-  box-shadow: none;
-  height: 2.5em;
-  color: #fff;
-}
-
 textarea {
   display: block;
   height: 200px;

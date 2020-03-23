@@ -1,0 +1,9 @@
+<div class="head" (drop)="handleDrop($event)" (dragover)="handleDragover($event)" (paste)="handlePaste($event)">
+  <div>
+    <p>1. select image from folder and upload as base64</p>
+    <p>2. drag image from folder and upload as base64</p>
+    <p>3. select image from folder and upload as base64</p>
+  </div>
+  <button (click)="handleButton()">upload image</button>
+  <input type="file" (change)="handleInput($event)">
+</div>

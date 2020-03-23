@@ -15,22 +15,12 @@ export class AppComponent {
   ngOnInit() {
     this.input = document.querySelector('input');
   }
-  async handleInput(e) {
-    this.value = await this.FileRenderService.getBase64(e.target.files[0]);
-  }
+
   handleButton() {
     this.input.click();
   }
 
-  async handleDrop(e) {
-    e.preventDefault();
-    this.value = await this.FileRenderService.getBase64(e.dataTransfer.files[0]);
-  }
-  handleDragover(e) {
-    e.preventDefault();
-  }
-
-  async handlePaste(e) {
-    this.value = await this.FileRenderService.getBase64(e.clipboardData.files[0]);
+  setImgSrc(value: string) {
+    this.value = value;
   }
 }
